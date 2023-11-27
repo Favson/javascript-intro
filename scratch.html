@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="First Number" id="firstNumber">
+    <input type="number" placeholder="Second Number" id="secondNumber">
+
+
+    <button onclick="addNumbers()">+</button>
+    <button onclick="subtraction()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button>
+    <div id="displayResults"></div>
+    <script>
+        function addNumbers(){
+            var valueOne = Number(document.getElementById("firstNumber").value)
+            var valueTwo = Number(document.getElementById("secondNumber"). value)
+            document.getElementById('displayResults').innerHTML = (valueOne + valueTwo)
+        }
+        function subtraction(){
+            var valueOne = Number(document.getElementById("firstNumber").value)
+            var valueTwo = Number(document.getElementById("secondNumber"). value)
+            alert(valueOne - valueTwo)
+        }
+        function multiply(){
+            var valueOne = Number(document.getElementById("firstNumber").value)
+            var valueTwo = Number(document.getElementById("secondNumber"). value)
+            alert(valueOne * valueTwo)
+        }
+        function divide(){
+            var valueOne = Number(document.getElementById("firstNumber").value)
+            var valueTwo = Number(document.getElementById("secondNumber"). value)
+            alert(valueOne / valueTwo)
+        }
+        
+    </script>
+</body>
+</html>
