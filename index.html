@@ -12,43 +12,55 @@
           }
       
           input {
-            width: 200px;
+            width: 250px;
             padding: 10px;
             font-size: 16px;
+            border-radius: 10px;
           }
       
           button {
-            width: 50px;
-            padding: 10px;
-            font-size: 16px;
+            width: 60px;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
             margin: 5px;
             cursor: pointer;
+          }
+          .container{
+            background-color: grey;
+            justify-content: center;
+            margin: 0 auto;
+            border-radius: 20px;
+            padding: 15px;
+            width: 25%;
           }
     </style>
 </head>
 <body>
-    <h2>Mini Calculator</h2>
-    <input type="text" id="display" readonly>
-    <br>
-    <button onclick="appendToDisplay('1')">1</button>
-    <button onclick="appendToDisplay('2')">2</button>
-    <button onclick="appendToDisplay('3')">3</button>
-    <button onclick="appendToDisplay('+')">+</button>
-    <br>
-    <button onclick="appendToDisplay('4')">4</button>
-    <button onclick="appendToDisplay('5')">5</button>
-    <button onclick="appendToDisplay('6')">6</button>
-    <button onclick="appendToDisplay('-')">-</button>
-    <br>
-    <button onclick="appendToDisplay('7')">7</button>
-    <button onclick="appendToDisplay('8')">8</button>
-    <button onclick="appendToDisplay('9')">9</button>
-    <button onclick="appendToDisplay('*')">*</button>
-    <br>
-    <button onclick="appendToDisplay('0')">0</button>
-    <button onclick="clearDisplay()">C</button>
-    <button onclick="calculateResult()">=</button>
-    <button onclick="appendToDisplay('/')">/</button>
+  <div class="container">
+  <h2>Mini Calculator</h2>
+  <input type="text" id="display" readonly>
+  <br><br>
+  <button onclick="appendToDisplay('1')">1</button>
+  <button onclick="appendToDisplay('2')">2</button>
+  <button onclick="appendToDisplay('3')">3</button>
+  <button onclick="appendToDisplay('+')">+</button>
+  <br>
+  <button onclick="appendToDisplay('4')">4</button>
+  <button onclick="appendToDisplay('5')">5</button>
+  <button onclick="appendToDisplay('6')">6</button>
+  <button onclick="appendToDisplay('-')">-</button>
+  <br>
+  <button onclick="appendToDisplay('7')">7</button>
+  <button onclick="appendToDisplay('8')">8</button>
+  <button onclick="appendToDisplay('9')">9</button>
+  <button onclick="appendToDisplay('*')">*</button>
+  <br>
+  <button onclick="appendToDisplay('0')">0</button>
+  <button onclick="clearDisplay()">C</button>
+  <button onclick="calculateResult()">=</button>
+  <button onclick="appendToDisplay('/')">/</button>
+  </div>
   
     <script>
       function appendToDisplay(value) {
